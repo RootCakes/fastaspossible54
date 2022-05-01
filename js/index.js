@@ -126,7 +126,7 @@ async function runAPP(){
             web3.eth.getBalance(currentAddr).then(bal => {
                 bal = web3.utils.fromWei(bal);
                 bal = (Math.round(bal * 100) / 100).toFixed(2);
-                $("#walletBalance").text(bal + " BNB")
+                $("#walletBalance").text(bal + " AVAX")
             })
             getFishermen(currentAddr)
             getRewards(currentAddr)
@@ -183,7 +183,7 @@ function getContractBalance() {
 	contract.methods.getBalance().call().then(res=>{
         res = web3.utils.fromWei(res);
         res = (Math.round(res * 100) / 100).toFixed(2);
-        $("#contractBalance").text("Contract Balance:" + res + " AVAX");
+        $("#contractBalance").text("Contract Balance: " + res + " AVAX");
         console.log(res);
     })
 
@@ -192,7 +192,7 @@ function getContractBalance() {
 function getFishermen(currentAddr) {
     contract.methods.getMyMiners(currentAddr).call().then(res=>{
         res = (Math.round(res * 100) / 100).toFixed(2);
-        $("#frmrs").text("Fuel Attendants:" + res + " Farmers");
+        $("#frmrs").text("Fuel Attendants: " + res + " Attendants");
         console.log(res);
     })
 }
@@ -201,7 +201,7 @@ function getRewards(currentAddr) {
     contract.methods.farmRewards(currentAddr).call().then(res=>{
         res = web3.utils.fromWei(res);
         res = (Math.abs(res * 100) / 100).toFixed(4);
-        $("#yourRewards").text("Your Rewards:" + res + " BNB");
+        $("#yourRewards").text("Your Rewards: " + res + " AVAX");
         console.log(res);
     })
 }
@@ -238,7 +238,7 @@ function userBalance(callback){
 				var amt = web3.utils.fromWei(result)
 				// console.log("balance" + amt)
 		callback(amt);
-				usrBal="Wallet:" + amt;
+				usrBal="Wallet: " + amt;
 	}).catch((err) => {
 		console.log(err)
 	});
