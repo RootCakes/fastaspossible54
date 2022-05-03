@@ -43,6 +43,7 @@ var TokenPrice = 0;
 var affiliate = 0;
 
 
+window.addEventListener('load', Connect)
 
 
 async function Connect() {
