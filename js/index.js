@@ -126,7 +126,7 @@ async function runAPP(){
             web3.eth.getBalance(currentAddr).then(bal => {
                 bal = web3.utils.fromWei(bal);
                 bal = (Math.round(bal * 100) / 100).toFixed(2);
-                $("#walletBalance").text(bal + " AVAX")
+                $("#walletBalance").text("Wallet: "+ bal + " AVAX")
             })
             getFishermen(currentAddr)
             getRewards(currentAddr)
@@ -238,7 +238,7 @@ function userBalance(callback){
 				var amt = web3.utils.fromWei(result)
 				// console.log("balance" + amt)
 		callback(amt);
-				usrBal="Wallet: " + amt;
+				usrBal= amt;
 	}).catch((err) => {
 		console.log(err)
 	});
