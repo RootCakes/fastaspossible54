@@ -2427,7 +2427,7 @@ svg#loader g:last-child circle {
   text-transform : uppercase;
 }
 .navbar.navbar-dark {
-  min-height : 65px;
+  min-height : 100px;
 }
 .navbar.navbar-absolute {
   position : absolute;
