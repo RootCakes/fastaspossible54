@@ -327,7 +327,7 @@ h6 {
 }
 
 #withdraw-tax {
-  color: red;
+  color: white;
   font-size: 12px;
 }
 .navbar {
@@ -1669,7 +1669,7 @@ section {
   color: #07316;
 }
 .faq .faq-list a {
-  color: #0652cc;
+  color: #344a54;
   display: block;
   position: relative;
    font-family: OCR A Std, monospace;
@@ -1705,7 +1705,7 @@ section {
   color: #07316;
 }
 .faq .faq-list a.collapsed:hover {
-  color: #0652cc;
+  color: #344a54;
 }
 .faq .faq-list a.collapsed .icon-show {
   display: inline-block;
