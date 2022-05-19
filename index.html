@@ -1,658 +1,573 @@
-<!DOCTYPE html>
-<html lang="en" data-textdirection="ltr">
+﻿<!DOCTYPE html>
+<html lang="en">
+
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta name="description" content="Fuel Station - Pump Fuel, Compound, Repeat. Earn 7%  On AVAX Daily.">
-    <meta name="keywords" content="Fuel Station Money, Fuel Station Crypto, Baked Beans Fork, AVAX Forks, AVAX 7%, AVAX Farm">
-    <meta name="author" content="FS">
-    <title>FuelStation.Money - Pump Fuel, Compound, Earn 7% Daily!</title>
-    <link rel="apple-touch-icon" href="theme-assets/images/ico/apple-icon-120.png">
-    <link rel="shortcut icon" type="image/x-icon" href="theme-assets/images/ico/favicon.ico">
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,700" rel="stylesheet">
-    <!--Font icons-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <!-- BEGIN VENDOR CSS-->
-    <link rel="stylesheet" type="text/css" href="theme-assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="theme-assets/fonts/themify/style.min.css">
-    <link rel="stylesheet" type="text/css" href="theme-assets/fonts/flag-icon-css/css/flag-icon.min.css">
-    <link rel="stylesheet" type="text/css" href="theme-assets/vendors/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="theme-assets/vendors/flipclock/flipclock.css">
-    <link rel="stylesheet" type="text/css" href="theme-assets/vendors/swiper/css/swiper.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="js/index.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/web3.min.js"></script>
-    <script src="js/lib/jquery-3.6.0.min.js"></script>
-    <!-- END VENDOR CSS-->
-    <!-- END CRYPTO CSS-->
-    <!-- BEGIN Page Level CSS-->
-    <link rel="stylesheet" type="text/css" href="theme-assets/css/template-intro-video.css">
-    <!-- END Page Level CSS-->
-    <!-- BEGIN Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <!-- END Custom CSS-->
 
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Fuel Station | Hire Attendants, Earn BUSD, Compound, Rinse, Repeat!</title>
+     <meta content="Fuel Station - Hire Attendants, Earn BUSD!" name="description">
+    <meta content="busd, bnb, bsc, binance smart smart, compound bnb, compound bsc, baked beans fork, compound busd, busd farmer" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/fuelstation-logo.PNG" rel="icon" type="image/png">
+    <link href="assets/img/fuelstation-logo.PNG" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+     <!-- Facebook Meta Tags -->
+      <meta property="og:url" content="https://fuelstation.money/">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="Fuel Station">
+      <meta property="og:description" content="Fuel Station - Hire Attendants, Earn USD!">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="ajax/libs/web3/3.0.0-rc.5/web3.min.js"></script>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
   </head>
-  <body class=" 1-column   page-animated template-intro-video-default template-intro-video" data-menu-open="hover" data-menu="" oncontextmenu="return false">
-    <!-- Preloader >
-<div id="loader-wrapper">
-    <svg viewbox=" 0 0 512 512" id="loader">
-        <linearGradient id="loaderLinearColors" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="5%" stop-color="#28bcfd"></stop>
-            <stop offset="100%" stop-color="#1d78ff"></stop>
-        </linearGradient>        
-        <g>
-            <circle cx="256" cy="256" r="150" fill="none" stroke="url(#loaderLinearColors)" />
-        </g>
-        <g>
-            <circle cx="256" cy="256" r="125" fill="none" stroke="url(#loaderLinearColors)" />
-        </g>
-        <g>
-            <circle cx="256" cy="256" r="100" fill="none" stroke="url(#loaderLinearColors)" />
-        </g>
-        <g>
-            <circle cx="256" cy="256" r="75" fill="none" stroke="url(#loaderLinearColors)" />
-        </g>
-        <circle cx="256" cy="256" r="60" fill="url(#loaderImage)" stroke="none" stroke-width="0" />
 
-        <!-- Change the preloader logo here -->
-        <defs>
-            <pattern id="loaderImage" height="100%" width="100%" patternContentUnits="objectBoundingBox">
-                <image href="theme-assets/images/loader-logo.png" preserveAspectRatio="none" width="1" height="1"></image>
-            </pattern>
-        </defs>
-    </svg>
+  <style>
+    /* Style The Dropdown Button */
+    .dropbtn {
+      background-color: transparent;
+      color: white;
+      padding-left: 9px;
+      font-weight: 800;
+      border: none;
+      font-size: 13px;
+    }
 
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
-</div>
-<!--/ Preloader --><nav class="vertical-social">
-    <ul>
-        <li><a href="https://discord.gg/TsVjzM3F5k"><img src="img/discord.png"><i class="" aria-hidden="true"></i></a></li>
-        <li><a href="http://www.twitter.com/fuelstationdefi/"> <img src="img/twitter.png"><i class="" aria-hidden="true"></i></a></li>
-        <li><a href="http://hazecrypto.com/"> <img src="img/hazecrypto.png"> <i class="" aria-hidden="true"></i></a></li>
-	<li><a href="https://snowtrace.io/"><img src="img/snowtrace.png"> <i class="" aria-hidden="true"></i></a></li>
-	    
-    </ul>
-</nav>
-    <!-- /////////////////////////////////// HEADER /////////////////////////////////////-->
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
 
-    <!-- Header Start-->
-    <header class="page-header">
-      <!-- Horizontal Menu Start-->
-      <nav class="main-menu static-top navbar-dark navbar navbar-expand-lg fixed-top mb-1"><div class="container">
-    <a class="navbar-brand animated" data-animation="fadeInDown" data-animation-delay="1s" href="index.html"><img src="theme-assets/images/logo.png" class="navbar-brand-logo" alt="Crypto Logo"/><img src="theme-assets/images/logo-dark.png" class="navbar-brand-logo-dark d-none" alt="Fuel Station"/><span class="brand-text"><span class="font-weight-bold">Fuel</span> Station</span></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div id="navigation" class="navbar-nav ml-auto">
-            <ul class="navbar-nav mt-1">
-                <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.1s">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.2s">
-                    <a class="nav-link" href="#whitepaper">Whitepaper</a>
-                </li>
-		     <li class="nav-item animated" data-animation="fadeInDown" data-animation-delay="1.2s">
-                    <a class="nav-link" href="#disclaimer">Disclaimer</a>
-                </li>
-            </ul>
-            <span id="slide-line"></span>
-            <form class="form-inline mt-2 mt-md-0">
-                <a class="btn btn-sm btn-light btn-glow btn-round btn-sign-in my-2 my-sm-0 animated" data-animation="fadeInDown" data-animation-delay="1.8s" onclick="Connect()">Connect</a>
-            </form>
-        </div>
-    </div>
-</div>
-      </nav>
-      <!-- /Horizontal Menu End-->
-    </header>
-    <!-- /Header End-->
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #624b08;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      font-weight: 600;
+      border-radius: 14px;
+    }
 
-    <!-- //////////////////////////////////// CONTAINER ////////////////////////////////////-->
-    <div class="content-wrapper">
-      <div class="content-body">
-        <main><!-- Header: Intro Video -->
-<section class="head-area" id="head-area" data-midnight="white">
-    <div class="bg-shape">
-        <div class="bg-ripple-animation d-none d-md-block">
-            <div class="intro-video-bg-ripples">
-                <div class="ripples"></div>
-            </div>
-        </div>
-    </div>
-    <div class="head-content container-fluid d-flex align-items-center">
-        <div class="container">
-            <div class="banner-wrapper">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="banner-content">
-				<span id="demo" style="color: #FFFFFF"></span><span style="color: #FFFFFF">Coming Soon!</span>
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: rgb(255, 255, 255);
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-size: 11px;
+      border-radius: 14px;
+    }
 
-<!-- script>
-// Set the date we're counting down to
-var countDownDate = new Date("May 20, 2022 19:00:00").getTime();
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: #212429
+    }
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
 
-  // Get today's date and time
-  var now = new Date().getTime();
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {
+      background-color: transparent;
+    }
+  </style>
 
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script -->				
-                            <h1 class="best-template animated" data-animation="fadeInUpShorter" data-animation-delay="1.5s">Earn 7.00% Daily! <br class="d-none d-xl-block">Pump Fuel, Compound, Repeat.</h1>
-                            <h3 class="d-block animated" data-animation="fadeInUpShorter" data-animation-delay="1.6s">Locked Treasury & Buybacks For <br>Sustainability & Longevity.</h3>
-                            <div class="mt-4">
-                                <a href="#whitepaper" class="btn btn-lg btn-round btn-light btn-glow animated" data-animation="fadeInUpShorter" data-animation-delay="1.7s">Whitepaper</a>
-                                <!--a href="main.html" class="btn btn-lg btn-round btn-light btn-glow ml-4 animated" data-animation="fadeInUpShorter" data-animation-delay="1.8s">Launch 
-</a --!>
-                            </div>
-                        </div>
-                    </div>
-                    
-                        <!-- dApp --> 
-                      <div class="col-lg-6 col-md-12 move-first">
-<div class="form-style-10"><form>
-<span class="footer-title mb-5 animated" data-animation="fadeInUpShorter" data-animation-delay="1s" style="font-size: 16px; color: #007BFF" id="contractBalance"><b>Contract Balance</b>: 0 AVAX</span><br>
-<span class="footer-title mb-5 animated" data-animation="fadeInUpShorter" data-animation-delay="1.2s" style="font-size: 16px; color: #007BFF" id="walletBalance"><b>Wallet</b>: 0 AVAX</span><br>
-<span class="footer-title mb-5 animated" data-animation="fadeInUpShorter" data-animation-delay="1.2s" style="font-size: 16px; color: #007BFF" id="frmrs"><b>Fuel Attendants</b>: 0 ATTNDTS</span><hr>
-  <div>
-        <input type="number" name="fname" id="app__inputbnb" placeholder="0 AVAX"><br>
-    </div>
-<center><input value="Hire Attendants" type="button" onclick="stakeBNB()" style="font-family: Comfortaa,Roboto,'Helvetica Neue',Arial,sans-serif; font-style: bold; cursor:pointer"></center><hr>
-<span class="footer-title mb-5 animated" data-animation="fadeInUpShorter" data-animation-delay="1s" style="font-size: 16px; color: #007BFF"><b>MAX Deposit</b>: 10 AVAX</span><br>
-<span class="footer-title mb-5 animated" data-animation="fadeInUpShorter" data-animation-delay="1s" style="font-size: 16px; color: #007BFF" id="yourRewards"><b>Your Rewards</b>: 0 AVAX</span><hr>
-<center><input value="Pump Fuel" type="button" style="font-family: Comfortaa,Roboto,'Helvetica Neue',Arial,sans-serif; font-style: bold; float: left; cursor:pointer" onclick="compound()"></center> 
-<input value="Withdraw" type="button" style="font-family: Comfortaa,Roboto,'Helvetica Neue',Arial,sans-serif; font-style: bold; float: right; cursor:pointer" onclick="sellFarmers()"><br>
-   
+  <body>
 
 
-</form>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+      <div class="container d-flex align-items-center justify-content-lg-between">
 
-</div>
-   <!-- form>
-        <br>
+        <span class="me-auto me-lg-0"><a href="index.html"><img style="height: 100%; width: 40px; padding-right: 5px;  font-family: cursive;"  alt=""> <span style="color: #073160"><img src="assets/img/fuelstation.PNG">Fuel Station</span></a></span>
 
-           
-		<input name="AVAX" type="text" data-animation="fadeInUpShorter" data-animation-delay="0.2s" id="AVAX" placeholder="AVAX" value="AVAX" readonly><br><br>
-  
-          <input value="Hire Attendants" type="submit" class="btn btn-sm btn-light btn-glow btn-round btn-sign-in my-2 my-sm-0 animated" data-animation="fadeInDown" data-animation-delay=1.8s"><br><br>
-<span class="footer-title mb-5 animated" data-animation="fadeInUpShorter" data-animation-delay="1.2s" style="font-size: 18px; color: #FFFFFF"><b>MAX Deposit</b>: 10 AVAX</span><br>
-<span class="footer-title mb-5 animated" data-animation="fadeInUpShorter" data-animation-delay="1.2s" style="font-size: 18px; color: #FFFFFF" id="yourRewards"><b>Your Rewards</b>: $Rewards</span><br>
-         
- <input value="Pump Fuel" type="submit" class="btn btn-sm btn-light btn-glow btn-round btn-sign-in my-2 my-sm-0 animated" data-animation="fadeInDown" data-animation-delay=2.4s">
-         <input value="Get Change" type="submit" class="btn btn-sm btn-light btn-glow btn-round btn-sign-in my-2 my-sm-0 animated" data-animation="fadeInDown" data-animation-delay=2.4s">
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li>
+              <a class="nav-link" href="#" target="_blank"><img class="nav-logo" id="logo" alt="" src="assets/img/ccs-audit.png"><strong>Security</strong></a>
+            </li>
+            <li>
+              <a class="nav-link" href="https://pancakeswap.finance/swap?outputCurrency=0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56" target="_blank"><img class="nav-logo" id="logo" alt="" src="assets/img/pancakeswap.svg"><strong>Buy BUSD</strong></a>
+            </li>       
+            <li>
         
-      
-    </form --!>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--/ dApp -->
+              <a class="nav-link" href="https://bscscan.com/address/0x8be8881C641Dc5A40845253Ee3eD04955eDFe96D#code" target="_blank"><img class="nav-logo" id="logo" alt="" src="assets/img/bscscan-logo-light-circle.svg"><strong>Contract</strong></a>
 
-<!-- Stats -->
-<section class="exchange-listing" id="exchange-listing">
-    <!-- Stats Starts -->
-    <div class="container-fluid bg-color">
-        <div class="container">
-            <div class="row listing list-unstyled">
-               <div class="col animated" data-animation="fadeInUpShorter" data-animation-delay="0.3s">
-                    <h2>14.00%</h2>
-                    Referral Fee
-                </div>
-   		<div class="col animated" data-animation="fadeInUpShorter" data-animation-delay="0.3s">
-                    <h2>10 AVAX</h2>
-                    MAX Deposit
-                </div>
-                <div class="col animated" data-animation="fadeInUpShorter" data-animation-delay="0.3s">
-                    <h2>7.00%</h2>
-                    Daily Rewards
-                </div>
-                <div class="col animated" data-animation="fadeInUpShorter" data-animation-delay="0.4s">
-                    <h2>2,555%</h2>
-                    Yearly Return
-                </div>
-                <div class="col animated" data-animation="fadeInUpShorter" data-animation-delay="0.5s">
-                    <h2>7.00%</h2>
-                    Insurance Fee
-                </div>
-                <div class="col animated" data-animation="fadeInUpShorter" data-animation-delay="0.6s">
-                    <h2>7.00%</h2>
-                    Withdrawl Fee
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Stats Ends -->
-</section>
-<!--/ Stats Area -->
-
-<!-- About -->
-<section class="about section-padding" id="about">
-    <div class="container-fluid">
-        <div class="container">
-            <div class="heading text-center">
-                <h6 class="sub-title animated" data-animation="fadeInUpShorter" data-animation-delay="0.2s">What Is Fuel Station?</h6>
-                <h2 class="title animated" data-animation="fadeInUpShorter" data-animation-delay="0.3s"><strong>Forked & Optimized From Baked Beans!</strong></h2>
-                <div class="separator animated" data-animation="fadeInUpShorter" data-animation-delay="0.3s">
-                    <span class="large"></span>
-                    <span class="medium"></span>
-                    <span class="small"></span>
-                </div>
-                <p class="content-desc animated" data-animation="fadeInUpShorter" data-animation-delay="0.4s">Fuel Station's Smart Contract Automatically Distributes Up To 7.00%  Daily On AVAX Deposits. <br>Fuel Station Isn't Just Another Fork, It's Optimized Smart Contract Includes A Deposit Limit To Prevent Large Purchases & Withdrawls AKA Whale Prevention With Tax.<br><br><a href="#whitepaper">Read More Below</a></p>
-            </div>
-        </div>
-    </div>
-</section>
-<!--/ About -->
-<!-- Stats -->
-<
-<!--/ Stats -->
-
-<!-- FAQ -->
-<section id="faq" class="faq section-padding">
-    <div class="container-fluid">
-        <div class="container">
-            <div class="heading text-center">
-                <h6 class="sub-title animated" data-animation="fadeInUpShorter" data-animation-delay="0.2s">FAQ</h6>
-                <h2 class="title animated" data-animation="fadeInUpShorter" data-animation-delay="0.3s">Frequently Asked <strong>Questions</strong></h2>
-                <div class="separator animated" data-animation="fadeInUpShorter" data-animation-delay="0.3s">
-                    <span class="large"></span>
-                    <span class="medium"></span>
-                    <span class="small"></span>
-		    </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <nav>
-                        <div class="nav nav-pills nav-underline mb-5 animated" data-animation="fadeInUpShorter" data-animation-delay="0.5s" id="myTab" role="tablist">
-                            <a href="#general" class="nav-item nav-link active" id="general-tab" data-toggle="tab" aria-controls="general" aria-selected="true" role="tab">General</a>
-                            <a href="#metamask" class="nav-item nav-link" id="ico-tab" data-toggle="tab" aria-controls="ico" aria-selected="false" role="tab">MetaMask</a>
-                            <a href="#transactions" class="nav-item nav-link" id="token-tab" data-toggle="tab" aria-controls="token" aria-selected="false" role="tab">Transactions</a>
-                            <a href="#apr" class="nav-item nav-link" id="client-tab" data-toggle="tab" aria-controls="client" aria-selected="false" role="tab">APR</a>
-                            <!--a href="#legal" class="nav-item nav-link" id="legal-tab" data-toggle="tab" aria-controls="legal" aria-selected="false" role="tab"></a --!>
-                        </div>
-                    </nav>
-                    <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
-                            <div id="general-accordion" class="collapse-icon accordion-icon-rotate">
-                                <div class="card animated" data-animation="fadeInUpShorter" data-animation-delay="0.1s">
-                                    <div class="card-header" id="headingOne">
-                                        <h5 class="mb-0">
-                                        <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            <span class="icon"></span>
-                                            Can I make payments directly from an exchange?
-                                        </a>
-                                      </h5>
-                                    </div>
-                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#general-accordion">
-                                        <div class="card-body">
-                                            NO. Please do not deposit from exchanges. You will need MetaMask to interact with the smart contract.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card animated" data-animation="fadeInUpShorter" data-animation-delay="0.2s">
-                                    <div class="card-header" id="headingTwo">
-                                        <h5 class="mb-0">
-                                        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            <span class="icon"></span>
-                                           Do I need to "Pump Fuel" AKA "Compound" exactly 24-hours apart?
-                                        </a>
-                                      </h5>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#general-accordion">
-                                        <div class="card-body">
-                                            NO! This is just a rough estimate for best compounding rates. You may proceed with your own time-frame as long as its at-least once-a-day.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card animated" data-animation="fadeInUpShorter" data-animation-delay="0.3s">
-                                    <div class="card-header" id="headingThree">
-                                        <h5 class="mb-0">
-                                        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            <span class="icon"></span>
-                                            How is the 7.00% daily calculated?
-                                        </a>
-                                      </h5>
-                                    </div>
-                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#general-accordion">
-                                        <div class="card-body">
-                                            The interest rate is entirely variable and may fluctuate to adjust the smart contract's health. You may see days with higher rewards and other days may be lower rewards. This is strictly done to create longevity within the smart contract. <br><br>To have the highest chance of reaching 7.00% daily, users must practice "Pumping Gas" aka "Compounding" daily for 6 days a week before having a chance to reach maximum rewards. Theoretically, if you withdraw daily, your reward rate will decrease. If you continue to "Pump Gas", you may eventually have higher reward rates.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="metamask" role="tabpanel" aria-labelledby="metamask-tab">
-                            <div id="metamask-accordion" class="collapse-icon accordion-icon-rotate">
-                                <div class="card">
-                                    <div class="card-header" id="icoHeadingOne">
-                                        <h5 class="mb-0">
-                                        <a class="btn btn-link" data-toggle="collapse" data-target="#icoCollapseOne" aria-expanded="true" aria-controls="icoCollapseOne">
-                                            <span class="icon"></span>
-                                            Where do I download MetaMask from?
-                                        </a>
-                                      </h5>
-                                    </div>
-                                    <div id="icoCollapseOne" class="collapse show" aria-labelledby="icoHeadingOne" data-parent="#ico-accordion">
-                                        <div class="card-body">
-                                           Please visit <a href="https://metamask.io/download/">https://metamask.io/download/</a> to read more about how to install and download MetaMask.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="icoHeadingTwo">
-                                        <h5 class="mb-0">
-                                        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#icoCollapseTwo" aria-expanded="false" aria-controls="icoCollapseTwo">
-                                            <span class="icon"></span>
-                                            How do I add AVAX to MetaMask?
-                                        </a>
-                                      </h5>
-                                    </div>
-                                    <div id="icoCollapseTwo" class="collapse" aria-labelledby="icoHeadingTwo" data-parent="#ico-accordion">
-                                        <div class="card-body">
-                                            Please visit <a href="https://chainlist.org/" target="_blank">https://chainlist.org/</a> and searh for AVAX. You must have MetaMask pre-installed to your browser. Then connect your wallet to automatically add the network. Alternatively, please visit <a href="https://www.avax.network/" target="_blank">https://www.avax.network/</a> for more information.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="icoHeadingThree">
-                                        <h5 class="mb-0">
-                                        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#icoCollapseThree" aria-expanded="false" aria-controls="icoCollapseThree">
-                                            <span class="icon"></span>
-                                            What Chain is AVAX on?
-                                        </a>
-                                      </h5>
-                                    </div>
-                                    <div id="icoCollapseThree" class="collapse" aria-labelledby="icoHeadingThree" data-parent="#ico-accordion">
-                                        <div class="card-body">
-                                           This project runs on AVAX-C. When using MetaMask, please ensure you deposit to AVAX-C and NOT AVAX-X.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="transactions" role="tabpanel" aria-labelledby="token-tab">
-                            <div id="token-accordion" class="collapse-icon accordion-icon-rotate">
-                                <div class="card">
-                                    <div class="card-header" id="tokenHeadingOne">
-                                        <h5 class="mb-0">
-                                        <a class="btn btn-link" data-toggle="collapse" data-target="#tokenCollapseOne" aria-expanded="true" aria-controls="tokenCollapseOne">
-                                            <span class="icon"></span>
-                                           "I deposited more AVAX into the dApp and my pending rewards are gone/missing? Where did they go?"
-                                        </a>
-                                      </h5>
-                                    </div>
-                                    <div id="tokenCollapseOne" class="collapse show" aria-labelledby="tokenHeadingOne" data-parent="#token-accordion">
-                                        <div class="card-body">
-                                            Do not worry. Your rewards are auto-compounded once you deposit new funds into the smart contract.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="tokenHeadingTwo">
-                                        <h5 class="mb-0">
-                                        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#tokenCollapseTwo" aria-expanded="false" aria-controls="tokenCollapseTwo">
-                                            <span class="icon"></span>
-                                           How do referrals work? Where are my referred payments?
-                                        </a>
-                                      </h5>
-                                    </div>
-                                    <div id="tokenCollapseTwo" class="collapse" aria-labelledby="tokenHeadingTwo" data-parent="#token-accordion">
-                                        <div class="card-body">
-                                          Referral rewards are automatically sent to your pending rewards section of the dApp. You can claim the referral rewards there anytime.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="tokenHeadingThree">
-                                        <h5 class="mb-0">
-                                        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#tokenCollapseThree" aria-expanded="false" aria-controls="tokenCollapseThree">
-                                            <span class="icon"></span>
-                                            My transcation is stuck, HELP!
-                                        </a>
-                                      </h5>
-                                    </div>
-                                    <div id="tokenCollapseThree" class="collapse" aria-labelledby="tokenHeadingThree" data-parent="#token-accordion">
-                                        <div class="card-body">
-                                          If you see your transaction pending, you have the option to click "Speed Up" and enter a higher gwei amount in the fees section. Another ideal solution would be to set advanced gas optimization by clicking "Settings", then "Experimental", and turn on "Enable Enhanced Gas Fee UI". You can switch your gas setting to "Aggressive" to faster transactions. There are fees within MetaMask, please use cautiously.  </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="apr" role="tabpanel" aria-labelledby="client-tab">
-                            <div id="client-accordion" class="collapse-icon accordion-icon-rotate">
-                                <div class="card">
-                                    <div class="card-header" id="clientHeadingOne">
-                                        <h5 class="mb-0">
-                                        <a class="btn btn-link" data-toggle="collapse" data-target="#clientCollapseOne" aria-expanded="true" aria-controls="clientCollapseOne">
-                                            <span class="icon"></span>
-                                            What is a variable interest rate?
-                                        </a>
-                                      </h5>
-                                    </div>
-                                    <div id="clientCollapseOne" class="collapse show" aria-labelledby="clientHeadingOne" data-parent="#client-accordion">
-                                        <div class="card-body">
-                                            VIR (Variable Interest Rate) is sometimes called an "adjustable" or "floating" rate, which is a type of interest rate that fluctuates over time because it is based on an underlying benchmark interest rate or index that changes periodically. Compared to a "Fixed Interest Rate", a "Variable Interest Rate" means that the reward rate can fluctuate and change relatively to factors within the smart-contract.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="clientHeadingTwo">
-                                        <h5 class="mb-0">
-                                        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#clientCollapseTwo" aria-expanded="false" aria-controls="clientCollapseTwo">
-                                            <span class="icon"></span>
-                                            How are the daily reward rates affected?
-                                        </a>
-                                      </h5>
-                                    </div>
-                                    <div id="clientCollapseTwo" class="collapse" aria-labelledby="clientHeadingTwo" data-parent="#client-accordion">
-                                        <div class="card-body">This is simple. The three main reasons the rewards rate fluctuate are as follows:<br><br>
-                                            1) Contract Balance (at the time of being rewarded)<br>
-					    2) Frequency of daily deposits and withrawls from other users and yourself<br>
-					    3) Overall market conditions (price of AVAX) fluctuating
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="clientHeadingThree">
-                                        <h5 class="mb-0">
-                                        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#clientCollapseThree" aria-expanded="false" aria-controls="clientCollapseThree">
-                                            <span class="icon"></span>
-                                      What are "Attendants" and how are they correlated with rewards?
-                                        </a>
-                                      </h5>
-                                    </div>
-                                    <div id="clientCollapseThree" class="collapse" aria-labelledby="clientHeadingThree" data-parent="#client-accordion">
-                                        <div class="card-body">
-                                            "Attendants" are your work-horses. Think of them as your own personal army. They each own part of the smart-contract. The "Attendants" that you hire, represent a portion of the smart contract size. AVAX deposits turn into "Attendants". The more "Attendants" you have, the higher your daily reward if compounded.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="legal" role="tabpanel" aria-labelledby="legal-tab">
-                            <div id="legal-accordion" class="collapse-icon accordion-icon-rotate">
-                                <div class="card">
-                                    <div class="card-header" id="legalHeadingOne">
-                                        <h5 class="mb-0">
-                                        <a class="btn btn-link" data-toggle="collapse" data-target="#legalCollapseOne" aria-expanded="true" aria-controls="legalCollapseOne">
-                                            <span class="icon"></span>
-                                            Collapsible Group Item #1
-                                        </a>
-                                      </h5>
-                                    </div>
-                                    <div id="legalCollapseOne" class="collapse show" aria-labelledby="legalHeadingOne" data-parent="#legal-accordion">
-                                        <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="legalHeadingTwo">
-                                        <h5 class="mb-0">
-                                        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#legalCollapseTwo" aria-expanded="false" aria-controls="legalCollapseTwo">
-                                            <span class="icon"></span>
-                                            Collapsible Group Item #2
-                                        </a>
-                                      </h5>
-                                    </div>
-                                    <div id="legalCollapseTwo" class="collapse" aria-labelledby="legalHeadingTwo" data-parent="#legal-accordion">
-                                        <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-header" id="legalHeadingThree">
-                                        <h5 class="mb-0">
-                                        <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#legalCollapseThree" aria-expanded="false" aria-controls="legalCollapseThree">
-                                            <span class="icon"></span>
-                                            Collapsible Group Item #3
-                                        </a>
-                                      </h5>
-                                    </div>
-                                    <div id="legalCollapseThree" class="collapse" aria-labelledby="legalHeadingThree" data-parent="#legal-accordion">
-                                        <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--/ FAQ -->
-
-<!-- Whitepaper -->
-<section id="whitepaper" class="whitepaper section-pro section-padding bg-color" id="whitepaper">
-    <div class="container-fluid">
-        <div class="container">
-            <div class="heading text-center">
-               
-                <h2 class="title animated" data-animation="fadeInUpShorter" data-animation-delay="0.3s">Whitepaper</h2>
-                <div class="separator animated" data-animation="fadeInUpShorter" data-animation-delay="0.3s">
-                    <span class="large"></span>
-                    <span class="medium"></span>
-                    <span class="small"></span>
-                </div>
-                <p class="content-desc animated" data-animation="fadeInUpShorter" data-animation-delay="0.4s">Read more about how the Smart Contract Operates. Forked off of Baked Beans!</p>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-5">
-                    <div class="whitepaper-img">
-                        <img class="img-fluid animated" data-animation="fadeInUpShorter" data-animation-delay="0.6s" src="theme-assets/images/whitepaper.png" alt="whitepaper">
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-7">
-                    <div class="content-area">
-                        <h4 class="title animated" data-animation="fadeInUpShorter" data-animation-delay="0.5s">Staking Pool Adventure</h4>
-                 
-                        <p class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.7s">The mission is simple. You are on a journey  and need "Fuel" along the way. You'll need to "Pump Fuel" to ensure you don't ever run out! If you run out of fuel (Withdraw) too often, you may find yourself slowing down. Fuel Station is locked staking pool with variable interest rates to help you get across country. AVAX is deposited and turned into "Attendants". "Attendants" earn up to 7.00% variable APR daily on your deposit and future compounded rewards. <b>All</b> deposits are <b>LOCKED</b>, meaing no dev/team member has access to the main locked wallet where rewards are transacted from. </p> 
-
-<p class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.7s"><b><u>Attendants</u></b>: Your initial investment essentially turns your AVAX into "Attendants" (Yes, the ones that pump gas for you!). Each attendant earns you a certain % of the smart-contract based on your initial/compounded deposit. <br><br><b>Note:</b> Your initial investment will not be able to be 
-	n at any point. Its locked into the reward pool when you "Hire Attendants". You are <b>only able to withdraw your earnings</b>.</p>
-
-<p class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.7s"><b><u>Pump Fuel</u></b>: Throughout your adventure, you will have the option to "Pump Fuel", which takes the reward you've generated, and compounds back into the Smart Contract.<br><br>
-<b>Example:</b> John deposits 1 AVAX. In 24-hours, John is rewarded up to 7.00% on his deposit. John now has the option to withdraw the 7.00% earned, OR "Pump Fuel" and compound to base his rewards off 1 AVAX + earned rewards compounded *0.07%.</p>
-
-  <h4 class="title animated" data-animation="fadeInUpShorter" data-animation-delay="0.5s">Fees</h4>
-                     
-<p class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.7s"><b><i class="fa fa-balance-scale" style="font-size:18px"></i> Insurance Fee</b>: 7%</p>
-<p class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.7s"><b><i class="fa fa-balance-scale" style="font-size:18px"></i> Withdrawl Fee</b>: 7%</p>
-<p class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.7s"><b>Fees</b>: A portion of the fees are used for insurance, marketing, and dev fund.</p>
-<h4 class="title animated" data-animation="fadeInUpShorter" data-animation-delay="0.5s">Smart Contract</h4>
-<p class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.7s"><b>What if the funds start to deplete?</b> <br>Before the funds begin to deplete, the variable APR will kick in resulting in lower rewards, essentially slowing down time and attempting to prevent loss.  The funds from the Insurance fee will be used to inject funds back into the contract when the balance approaches a certain threshold.</p>
-                  
-                    
- <h2 class="title animated" data-animation="fadeInUpShorter" data-animation-delay="0.3s" id="disclaimer">Disclaimer</h2>
-                <div class="separator animated" data-animation="fadeInUpShorter" data-animation-delay="0.3s">
-                    <span class="large"></span>
-                    <span class="medium"></span>
-                    <span class="small"></span>
-                </div>
-                <p class="content-desc animated" data-animation="fadeInUpShorter" data-animation-delay="0.4s"><b>High Risk Investment</b><br><br>
-Investing in Fuel Station and any other project always carries a high level of risk and may not be suitable for all investors. Before deciding to invest in Fuel Station, you should carefully consider your investment objectives, level of experience, and risk tolerance. The possibility exists that you could sustain a loss of some or all of your initial investment, and therefore you should not invest money that you cannot afford to lose. You should be aware of all the risks associated with high-risk projects such as Fuel Station, and seek advice from an independent financial advisor.<br><br>
-Fuel Station will not accept liability for any loss or damage, including without limitation to, any loss of profit, which may arise directly or indirectly from use of or reliance on such information.<br><br>
-Fuel Station makes no representation or warranties as to the accuracy and or timelines of the information contained herein. A qualified professional should be consulted before making any financial decisions. Please abide by your countries regulations for trading or participating in projects like Fuel Station and others. </p>
-            </div>
-            <div class="row">
-			</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--/ Whitepaper -->
-
-
-
-<!-- Video Modal -->
-
-<div class="modal ico-modal fade" id="ico-modal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            <div class="modal-body p-0">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" id="video"></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-        </main>
+            </li>
+            <li>
+              <a class="nav-link" href="https://twitter.com/FuelStationDefi" target="_blank"><img class="nav-logo" id="twitter" alt="" src="assets/img/twitter.svg"><strong>Twitter</strong></a>
+            </li>
+            <li>
+              <a class="nav-link" href="https://t.me/fuelstationdefi" target="_blank"><img class="nav-logo" id="telegram" alt="" src="assets/img/telegram.svg"><strong>Telegram</strong></a>
+            </li>
+            <li>
+              <a class="nav-link">
+                <button id="enableMetamask" class="btn connect-btn"><span style="color: #023fa1">Connect</span></button>
+              </a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
       </div>
-    </div>
-   
-    <!-- BEGIN VENDOR JS-->
-    <script src="theme-assets/vendors/vendors.min.js"></script>
-    <!-- BEGIN VENDOR JS-->
-    <!-- BEGIN PAGE VENDOR JS-->
-    <script src="theme-assets/vendors/flipclock/flipclock.min.js"></script>
-    <script src="theme-assets/vendors/swiper/js/swiper.min.js"></script>
-    <script src="theme-assets/vendors/waypoints/jquery.waypoints.min.js"></script>
-    <!-- END PAGE VENDOR JS-->
-    <!-- BEGIN THEME JS-->
-    <script src="theme-assets/js/theme.js"></script>
-    <script src="theme-assets/js/sales-notification.js"></script>
-    <!-- END CRYPTO JS-->
-    <!-- BEGIN PAGE LEVEL JS-->
-    <!-- END PAGE LEVEL JS-->
+    </header><!-- End Header -->
+
+
+    <!-- ======= Hero Section ======= -->
+
+    <section id="hero" class="bg d-flex align-items-center justify-content-center">
+
+      <div class="wrapper">
+
+        <div class="border"></div>
+
+        <div class="main-element">
+
+          <div class="container">
+
+            <div class="content-box" data-aos="zoom-in">
+              <div class="row">
+                <div class="col-lg-6">
+                  <br>
+               
+	    <h2><i class="bi-cloud-sun"><span style="color: #0600b3"> Hire Attendants & Earn!</span></i></h2>
+                  <h4>
+                    <i class="bi-check2-square bnb-icon"></i>
+                    <span id="daily-rate">8% Daily ~ 2920% APR</span>
+                  </h4>
+                  <h4>
+                    <i class="bi-check2-square bnb-icon"></i>
+                    <span id="ref-bonus">8% Referral Bonus</span>
+                  </h4>
+                  <h4>
+                    <i class="bi-check2-square bnb-icon"></i>
+                    <span id="daily-compound">4% Hire Bonus</span>
+                  </h4>
+                  <h4>
+                    <i class="bi-check2-square bnb-icon"></i>
+                    <span><span id="compound-hours">12</span> Hrs Compound Timer</span>
+                  </h4>
+                  <h4>
+                    <i class="bi-check2-square bnb-icon"></i>
+                    <span><span id="withdraw-cooldown">4</span> Hrs Withdraw Cooldown</span>
+                  </h4>
+                  <h4>
+                    <i class="bi-check2-square bnb-icon"></i>
+                    <span><span id="cut-off-step">48</span> Hrs Rewards Accumulation Cut-Off</span>
+                  </h4>
+                  <h4>
+                    <i class="bi-check2-square bnb-icon"></i>
+                    <span><span id="no-tax-compound-count">10</span> X Mandatory Compound Feature</span>
+                  </h4>
+                  <h4>
+                    <i class="bi-check2-square bnb-icon"></i>
+                    <span>80% Insurance Tax For Early Withdrawals</span>
+                  </h4>
+                  <h4>
+                </h4></div>
+                <div class="col-lg-6"><br>
+                  <div class="stats-row-container">
+                    <div class="stat">
+                      <div class="header">
+                        <br>
+                        Total BUSD Locked
+                      </div>
+                      <strong class="number" id="contract-balance">-</strong>
+                    </div>
+                    <!--
+			  <div class="stat">
+                <div class="header">
+			        	  <br>
+                  Total BUSD Referrals
+                </div>
+                <strong class="number" id="total-ref">-</strong>
+              </div>
+			  
+	             <div class="stat">
+                <div class="header">
+			        	  <br>
+                  Total BUSD Locked
+                </div>
+                <strong class="number" id="contract-balance">-</strong>
+              </div>
+		-->
+                    <div class="stat">
+                      <div class="header">
+                        <br>
+                        Total Deposit Count
+                      </div>
+                      <strong class="number" id="total-players">-</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center mt-2">
+                <div class="col-xl-12 disclaimer">
+                  <span>
+                    <strong style="color: red;">Important Note!</strong>
+                 <p style="color: #212529">Funds that are used to initially hire attendants
+                      (including re-hire) cannot be withdrawn,
+                      however, your attendants will indefinitely work and pump gas. Please use the application at your own risk.
+                 </span>
+                    <p style="color: #212529">
+                    <p style="color: #212529">
+                      Users should compound 10 no. of times before they can withdraw.
+                      Should an attendant decide not to compound or hire more attendants using their earnings and continuously withdraw, attendants will be charged with a 80% insurance tax that will be re-injected bkac into the smart contract.
+                    <p style="color: #212529">
+                      In Addition, to further encourage the community to re-hire/compound, there will be an additional 3% bonus for each compound action that the user will do, which can stack up to 40% for 10 consecutive times / 5 days. By doing so, this will ensure the long term potential profit of every player.
+                    <p style="color: #212529">
+                      The best strategy is to re-hire/compound for 5 days and harvest 1 day a week. This will increase the users investment at the same time increasing the daily yield earnings. This strategy has already been tried and tested by several project and is proven effective.                    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Hero -->
+
+    <main id="main">
+      <section id="mine" class="bg d-flex">
+        <div class="container main" data-aos="fade-up">
+          <div class="content-box">
+            <!--<h4 class="text-start busd" style="letter-spacing: 2px; margin-left: 5px;font-size: 2rem;"><u>Fuel Station Dashboard</u></h4>-->
+            <h4 style="color: #fff; font-weight: bold; font-family: cursive; justify-content: center; letter-spacing: 2px; margin-left: 5px;font-size: 2rem;">
+              <div class="busd">Fuel Station Dashboard</div>
+            </h4>
+            <div class="row stats-row-container">
+              <div class="col-lg-2 stat">
+                <div class="header">
+                  <i class="bi-bank"></i>
+                  <span>Initial Deposit</span>
+                </div>
+                <strong id="initial-deposit" class="number">-</strong>
+                <div>
+                  <strong>BUSD</strong>
+                </div>
+              </div>
+              <div class="col-lg-2 stat">
+                <div class="header">
+                  <i class="bi-bank"></i>
+                  Total Deposit
+                </div>
+                <strong id="total-deposit" class="number">-</strong>
+                <div>
+                  <strong>BUSD</strong>
+                </div>
+              </div>
+              <div class="col-lg-2 stat">
+                <div class="header">
+                  <i class="bi-wallet2"></i>
+                  Sold Gas
+                </div>
+                <div>
+                  <strong id="total-withdrawn" class="number">-</strong>
+                </div>
+                <div>
+                  <strong>BUSD</strong>
+                </div>
+              </div>
+              <div class="col-lg-2 stat">
+                <div class="header">
+                  <i class="bi-people"></i>
+                  Referral Rewards
+                  (<span id="ref-count">-</span>)
+                </div>
+                <div>
+                  <strong id="ref-rewards-busd" class="number">-</strong>
+                </div>
+                <div>
+                  <strong>BUSD</strong>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-5" style="justify-content: space-evenly;">
+              <div class="col-xl-5 first-box">
+                <div class="mine-card">
+                  <div class="row example">
+                    <div class="col-lg-8">
+                      <div style="line-height: 1.8;">
+                        <strong>
+                          <b>Hiring Example</b>
+                        </strong>
+                        <div>
+                          <div>100<span> BUSD </span>gets you:</div>
+                          <div>
+                            <i class="bi-minecart"></i>
+                            Attendants:
+                            <span id="example-miners">0</span>
+                          </div>
+                          <div>
+                            <i class="ri-coins-line ri-1x"></i>
+                            Daily:
+                            <span id="example-busd">0</span><span> BUSD</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="wallet">
+                        <i class="bi-wallet2"></i>
+                        <strong>Wallet</strong>
+                        <div>
+                          <span id="user-balance">0</span><br><span>BUSD</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br><br>
+                  <div class="btn-container">
+                    <div class="approve-container">
+                      <div style="padding-left: 5px; font-weight: 700;">
+                        <span style="font-size: 16px;">1.</span><!-- <i class="bi-bank"></i> -->
+                        <strong>Approve</strong><span> BUSD </span><span class="usd">(<span id="user-approved-spend">0</span> BUSD approved)</span>
+                        <!-- <span class="usd">
+					≈ $<span id="user-approved-spend-usd">0 </span><span> USD</span>
+				  </span> -->
+                      </div>
+                      <div>
+                        <input class="form-control" id="approve-spend" name="approved-spend" step="1" type="number" value="1000">
+                        <button class="btn glow-on-hover" id="" onclick="approveMiner()" role="button" type="button" style="margin-top: 5px;">Approve BUSD</button>
+                      </div>
+                    </div>
+                    <strong>
+                      <i class="bi-bank"></i>
+                      Deposit <span>BUSD</span>
+                      <span class="usd">
+                        ( min<span id="min-deposit"> 0 </span>,
+                      </span>
+                      <span class="usd">
+                        max<span id="max-deposit"> 0 </span>)</span>
+                      <input class="form-control" id="busd-spend" name="buy-miners" onchange="updateBuyPrice()" step="100" type="number" value="100">
+                    </strong>
+                    <button class="btn glow-on-hover" id="buy-eggs-btn" onclick="buyEggs()" role="button" disabled="" style="margin-top: 5px;">
+                      Hire
+                      <span id="eggs-to-buy">0</span>
+                      Attendants
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5">
+                <div class="mine-card">
+                  <div class="miners-info" style="margin-bottom: unset;">
+                    <div>
+                      <i class="bi-minecart"></i>
+                      <span id="your-miners">- </span>
+                      Attendants
+                    </div>
+                    <div>
+                      <i class="bi-arrow-down-short" style="font-size: 23px;"></i>
+                    </div>
+                    <div style="font-size: 21px;">
+                      <i class="ri-coins-line ri-1x"></i>
+                      <strong id="mined">-</strong>
+                      <span><strong>GAS</strong></span>
+                    </div>
+                    <div class="usd" style="font-size: 14px; padding: 15px 0 25px 0">
+                      <strong>Estimated daily yield</strong>
+                      <div>
+                        <span id="eggs-per-day">0</span><strong> BUSD</strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <br>
+                    <div class="timer">
+                      <i class="bi-hourglass-split"></i>
+                      Cart will be full in
+                    </div>
+                    <div style="text-align: center; padding-bottom: 7px;"><span id="claim-timer">--:--:--</span></div>
+                    <br>
+                    <div class="timer">
+                      <i class="bi-arrow-repeat"></i>
+                      Compound Count:
+                      <span id="compound-count"> 0</span>
+                    </div>
+                    <div class="btn-container" style="margin-top: 35px;">
+                      <div>
+                        <button class="btn glow-on-hover" id="withdraw" onclick="sellEggs()" role="button" disabled="">
+                          Pump Fuel
+                          <span class="cooldown" id="cooldown-timer">In --:--:--</span>
+                          <span class="tax" id="withdraw-tax">-80% tax</span>
+                        </button>
+                      </div>
+                      <br>
+                      <div>
+                        <button class="btn glow-on-hover" id="reinvest" onclick="hatchEggs()" role="button" disabled="">
+                          Hire More Attendants
+                          <span class="compound">
+                            (<span class="compound" id="compound-bonus">+0% bonus</span>)
+                          </span>
+                        </button>
+                      </div>
+                      <div class="timer" style="padding: 16px;">
+                        <i class="bi bi-clock"></i>
+                        Time until next hire bonus is activated:
+                        <span style="font-weight: 700;" id="compound-timer"> --:--:--</span>
+                      </div>
+                      <!--<div style="padding: 16px;">Time until next hire bonus is activated: <span style="font-weight: 700;" id="compound-timer">--:--:--</div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 sub-section">
+           <span> Every time you hire or re-hire attendants, after the time interval, the compound counter will increase and your hire bonus grows by</span>
+            <span id="compound-percent">-%</span>
+            (max <span id="max-compound">+-%</span>). <span style="color: #07316">Pumping fuel (withdrawing) will reset your bonus to 0.
+            <!--Time until next hire bonus is activated:</span> <span style="font-weight: 700;" id="compound-timer">--:--:--</span>-->
+          </div>
+          <div class="row">
+            <div class="col-lg-12 referral-link">
+              <span>
+                <i class="bi-check2-square"></i>
+                Earn
+                <span id="ref-percent">-%</span>
+                <span>when someone uses your referral link!</span>
+                <span>
+                  <a id="reflink"></a><span onclick="copyRef()"><i class="ri-file-copy-line"></i><span id="copied"></span>
+                  </span>
+                </span>
+            </span></div>
+          </div>
+        </div>
+      </section>
+      <!-- End Dashboard Section -->
+      <!-- ======= Frequently Asked Questions Section ======= -->
+
+      <section id="faq" class="bg faq section-bg">
+        <div class="container" data-aos="fade-up">
+          <br>
+          <h4 style="color: #07316; justify-content: center; font-family: cursive;">
+            <div class="busd">Frequently Asked Questions</div>
+          </h4>
+          <div class="faq-list">
+            <ul>
+              <li>
+                <i class="bx bx-help-circle icon-help"></i>
+                <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">What is Fuel Station?
+                  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                  <p>
+                    Fuel Station is a decentralized application built on the Binance Smart Chain.
+                    The object of the game is to hire more attendants sooner and more often than other players. This in turn earns you more BUSD faster.
+                    These attendants work for you 24/7, giving you a daily average of 8% of your attendants' value.
+                  <p>
+                    The daily percentage return depends on players' actions that are taken within the platform that impact the attendant's efficiency rate.
+                    The attendants efficiency rate rises and falls as users buy attendants, re-hire, and pump gas for BUSD.
+                  <p>
+                    Once attendants are bought, they cannot be sold.The investment made to re-hire them (either through hire or re-hiring) cannot be reverted.
+                    However, once bought, attendants will not stop producing yield.
+                </p></div>
+              </li>
+              <li>
+                <i class="bx bx-help-circle icon-help"></i>
+                <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-2">What makes it different from
+                  other similar platforms?
+                  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-2" class="collapse show" data-bs-parent=".faq-list">
+                  <p>
+                    Fuel Station has several anti-dumping and anti-whale measures in place to ensure the longevity of the project and ensure sustainability.
+                    These measures include maximum deposits, as well as a cutoff time AND a cooldown time for withdrawals.
+                  <p>
+                    The cutoff time is the amount of time it will take for your "cart" to be full of rewards. Once the bag is full, it will stop filling until you've taken some action in the game. This is to prevent whales from letting their rewards accumulate for a long time and removes the false impression the contract value is going up when most of it is rewards the whale is waiting to withdraw at once.  <p>
+                    The withdraw cooldown time is the amount of time one has to wait before they can make another withdrawal. This also prevents the contract balance from decreasing in value too fast. If the team decides it's necessary to protect the contract balance, this time period can be adjusted to slow down the rate of withdrawals, but it can only be set to a value less than or equal to 24 hours (per contract rules).
+                  <p>
+                    The compound count is the number of times the user has compounded. By default, the required compound count by the platform is 10, meaning the user will have to compound 10 times (compound once every 12 hours) before they can withdraw without the insurance tax of 80%. This feature in essense will ensure the longevity and stability of the project.
+                  <p>
+                    To reward users who compound, there is a bonus when you re-hire your daily attendants earnings instead of selling them. The bonus increases 4% every 12 hours that you compound without withdrawing (40% max after 5 days). This incentivizes the user to compound more often, which will help boost the farms efficiency rate in the long run. To be able to utilize the re-hire bonus feature, the player must not compound before the provided
+                    timer reaches 00:00:00.
+                  <p>
+                    For the players who choose to not play the game and only sell,
+                    there will be a 80% tax on those sells that will stay in the contract. If the player makes two or more consecutive sells, this tax will be applied. The only way for the user to not pay the 80% tax is to compound 10 times before making another withdrawal.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <i class="bx bx-help-circle icon-help"></i>
+                <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-3">How does this platform work?
+                  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-3" class="collapse show" data-bs-parent=".faq-list">
+                  <p>
+                    This platform work similarly to a financial market, where an asset has intrinsic value that is relative to the supply or demand of said asset.
+                    Attendants are purchased with a pre-determined currency at a price relative to the Attent's current mining efficiency rate.
+                    After the Attendants are purchased, they go to work for you right away to give you the best yield on your investment possible, for as long as possible. Just as any other asset bought and sold on an open market, the price of a
+                    Attendants will fluctuate over time, as will the mining efficiency rate, as you and other players recruit Attendants, compound earnings and sell earnings.
+                    In simpler terms, the more demand for the Attendants, the more they will increase in value and the more yield they will produce.
+                    Inversely, when the demand decreases, so will the value of the Attendants and their daily return on investment.
+                  <p>
+                    The main difference between a this game and a traditional financial market is that a recruited Attendants cannot be sold, only the value they provide can be sold. As the players of the game as a whole compound their earnings and make new deposits, the game efficiency rate will stay relatively constant, but the moment players start to sell more than they are compounding, the efficiency rate will begin to drop as to preserve the TVL and longevity of the game.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <i class="bx bx-help-circle icon-help"></i>
+                <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-4">What is the recommended
+                  strategy?
+                  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                <div id="faq-list-4" class="collapse show" data-bs-parent=".faq-list">
+                  <p>
+                    The best strategy that the team can recommend is to re-hire/compound for 6 days and harvest 1 day a week.
+                    This will increase the users investment at the same time increasing the daily yield earnings. This
+                    strategy has already been tried and tested by several project and is proven effective both for the short and long term.
+                  </p>
+                </div>
+              </li>
+          </ul></div>
+        </div>
+      </section>
+      <!-- End Frequently Asked Questions Section -->
+
+
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          © Copyright - The Fuel Station Team - All Rights Reserved.
+        </div>
+      </div>
+    </footer><!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/main_eth.js"></script>
   </body>
+
 </html>
