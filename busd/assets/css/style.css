@@ -630,12 +630,12 @@ h6 {
   overflow: hidden;
   background: linear-gradient(
     to right,
-    #134691 20%,
-    #113e80 25%,
-    #134691 35%,
-    #154fa3 45%,
-    #113e80 55%,
-    #103975 65%
+    #b9ccd4 20%,
+    #a8b8c0 25%,
+    #889ba4 35%,
+    #6f8189 45%,
+    #63747c 55%,
+    #dce8ee 65%
   );
   background-size: 200% auto;
   animation: shine 3s linear infinite;
