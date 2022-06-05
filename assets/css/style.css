@@ -656,14 +656,14 @@ fff .content-box {
   background: #d3e1f729;
   max-width: 1200px;
   margin: 0 auto;
-  border-radius: 15px;
-  border-style: solid;
+  --border-radius: 15px;
+--  border-style: solid;
   border-width: 3px;
   border-color: #ffffff;
 }
 
 #main .content-box {
-  padding: 10px;
+  padding: 1px;
   border-radius: 18px;
 }
 
