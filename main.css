@@ -89,6 +89,7 @@ button {
     font-size:  inherit; 
     line-height:  inherit;
     text-transform: none;
+
 } 
 
 [type="button"],button { 
@@ -616,6 +617,7 @@ p {
     display: flex; 
     flex-flow: row wrap; 
     width: 100%;
+    cursor: pointer;
 } 
 
 .css-ad85v9 { 
@@ -706,6 +708,7 @@ input[type="number"] {
     flex-direction: row; 
     -webkit-box-flex: 1; 
     flex-grow: 1;
+cursor: pointer;
 } 
 
 .css-xj09ev { 
@@ -714,6 +717,7 @@ input[type="number"] {
     flex-direction: row; 
     -webkit-box-flex: 1; 
     flex-grow: 1;
+    cursor: pointer;
 } 
 
 .css-1tsmbea { 
