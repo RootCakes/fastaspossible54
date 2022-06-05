@@ -134,7 +134,7 @@ button {
 .css-2hn8pi:hover { 
     text-decoration:  none; 
     background-color:  rgba(244, 181, 45, 0.14); 
-    border:  1px solid rgb(244, 181, 45);
+    border:  1px solid;
     border-color: rgb(255, 255, 255); 
     box-shadow: none;
 } 
@@ -510,7 +510,7 @@ p {
 .css-15exqvs { 
     margin: 0px; 
     font-size: 16px; 
-    color: rgb(255, 255, 255); 
+    color: #344a54; 
     font-family: Roboto; 
     font-weight: 400; 
     line-height: 1.43;
@@ -519,7 +519,7 @@ p {
 .css-bfsa24 { 
     margin: 0px; 
     font-size: 16px; 
-    color: rgb(255, 255, 255); 
+    color: #344a54;
     font-family: Roboto; 
     font-weight: 400; 
     line-height: 1.43; 
@@ -531,7 +531,7 @@ p {
     font-size: 20px; 
     font-family: Roboto; 
     line-height: 1.5; 
-    color: rgb(244, 181, 45); 
+    color: #344a54;
     font-weight: 500;
 } 
 
@@ -605,7 +605,7 @@ p {
     font-family: Roboto; 
     font-weight: 400; 
     line-height: 1.5; 
-    color: rgb(244, 181, 45); 
+    color: #F4B52D;
     display: flex; 
     -webkit-box-pack: center; 
     justify-content: center;
@@ -624,7 +624,7 @@ p {
     font-family: Roboto; 
     font-weight: 400; 
     line-height: 1.5; 
-    color: rgb(244, 181, 45);
+    color: #FFFFFF;
 } 
 
 input { 
@@ -652,7 +652,7 @@ input {
     font-family: Roboto; 
     font-weight: 400; 
     line-height: 1.43; 
-    color: rgb(244, 181, 45);
+    color: #ffffff;
 } 
 
 .css-m7b68o { 
@@ -697,7 +697,7 @@ input[type="number"] {
     font-family: Roboto; 
     font-weight: 400; 
     line-height: 1.5; 
-    color: rgb(255, 255, 255);
+    color: #055092;
 } 
 
 .css-5y52ga { 
@@ -787,7 +787,7 @@ input[type="number"] {
     font-family: Roboto; 
     font-weight: 400; 
     line-height: 1.43; 
-    color: rgb(244, 181, 45);
+    color: #ffffff;
 } 
 
 .css-1bqdy32 { 
