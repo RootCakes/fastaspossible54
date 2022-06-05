@@ -229,7 +229,7 @@ h6 {
 }
 .connect-btn:hover {
   background: #bcbcbc;
-}
+11:01 PM 6/4/2022}
 @media (max-width: 992px) {
   .connect-btn {
     padding: 7px 20px 8px 20px;
@@ -356,14 +356,14 @@ h6 {
   align-items: center;
   justify-content: center;
   padding: 10px;
-  font-size: 13px;
+  font-size: 16px;
   color: #385360;
   white-space: nowrap;
   transition: 0.3s;
 }
 .navbar a i,
 .navbar a:focus i {
-  font-size: 12px;
+  font-size: 20px;
   line-height: 0;
   margin-left: 5px;
 }
@@ -377,7 +377,7 @@ h6 {
 .navbar .dropdown ul {
   display: block;
   position: absolute;
-  left: 14px;
+  left: 20px;
   top: calc(100% + 30px);
   margin: 0;
   padding: 10px 0;
