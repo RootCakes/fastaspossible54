@@ -653,13 +653,13 @@ fff .content-box {
 }
 
 #main .container {
-  background: #ffffff;
+  background: #d3e1f729;
   max-width: 1200px;
   margin: 0 auto;
   border-radius: 15px;
   border-style: solid;
-  border-width: 7px;
-  border-color: #344a54;
+  border-width: 3px;
+  border-color: #ffffff;
 }
 
 #main .content-box {
