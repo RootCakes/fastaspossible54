@@ -215,16 +215,20 @@ h6 {
   --------------------------------------------------------------*/
 .connect-btn {
   color: #fff;
-background: #bcbcbc;
+  background: #bcbcbc;
   border-radius: 5px;
   white-space: nowrap;
   transition: 0.3s;
   font-size: 12px;
   border: 2px solid var(--token);
 }
+.connect-btn.active {
+  background: #FFFFFFc;
+  font-size: 12px;
+  border: 2px solid var(--token);
+}
 .connect-btn:hover {
   background: #bcbcbc;
-  color: #000000;
 }
 @media (max-width: 992px) {
   .connect-btn {
